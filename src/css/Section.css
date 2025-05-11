@@ -1,34 +1,43 @@
 .section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    width: clamp(100px, 10.42vw, 400px);
-    height: clamp(100px, 10.42vw, 400px);
+  width: clamp(140px, 10.42vw, 400px);
+  height: clamp(140px, 10.42vw, 400px);
 
-    background-color: var(--color-main);
+  background-color: var(--color-main);
 
-    transition: 150ms ease;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 150ms ease;
 }
-.section:hover { width: clamp(110px, 11vw, 400px); height: clamp(110px, 11vw, 400px); cursor: pointer; }
-.section:hover p { font-size: 1.6rem; }
-.section:hover .material-icons-sharp { font-size: 5.5rem; }
+.section:hover {
+  width: clamp(150px, 11vw, 400px);
+  height: clamp(150px, 11vw, 400px);
+  cursor: pointer;
+}
+.section:hover p {
+  font-size: 1.6rem;
+}
+.section:hover .material-icons-sharp {
+  font-size: 5.5rem;
+}
 
 .section p {
-    font-size: 1.4rem;
-    font-weight: var(--font-weight-bold);
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
 
-    color: var(--color-contrast);
+  color: var(--color-contrast);
 
-    transition: 150ms ease;
+  transition: 150ms ease;
 }
 
+.section .material-icons-sharp {
+  font-size: 5rem;
 
-.material-icons-sharp {
-    font-size: 5rem;
+  color: var(--color-contrast);
 
-    color: var(--color-contrast);
-
-    transition: 150ms ease;
+  transition: 150ms ease;
 }

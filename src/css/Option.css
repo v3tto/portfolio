@@ -1,0 +1,30 @@
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: clamp(40px, 2.6vw, 100px);
+  height: clamp(40px, 2.6vw, 100px);
+
+  background-color: var(--color-main);
+
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 150ms ease;
+}
+.option:hover {
+  width: clamp(50px, 3vw, 110px);
+  height: clamp(50px, 3vw, 110px);
+  cursor: pointer;
+}
+.option:hover .material-icons-sharp {
+  font-size: 2.5rem;
+}
+
+.option .material-icons-sharp {
+  font-size: 2rem;
+
+  color: var(--color-contrast);
+
+  transition: 150ms ease;
+}

@@ -1,5 +1,3 @@
-import "material-icons/iconfont/sharp.css";
-
 import "../css/Section.css";
 
 function Section({ section }) {
